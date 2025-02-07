@@ -64,7 +64,7 @@ export const sendMessage = async (message) => {
  
         saveChatHistory(updatedHistory);
  
-        return response;
+        return {"message":response};
     } catch (error) {
         console.error('Chat API Error:', error);
         throw error;
